@@ -18,7 +18,7 @@ export default function Card({ data, tags }: CardProps) {
   return (
     <div
       className={cn(
-        `justify-between group gap-3 flex hover:bg-neutral-50 text-black w-full`,
+        `justify-between group gap-3 flex hover:bg-neutral-50 dark:hover:bg-background/90 text-black w-full`,
       )}
     >
       <CardDate data={data} />

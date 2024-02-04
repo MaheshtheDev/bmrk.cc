@@ -1,3 +1,5 @@
+import { cn } from 'lib/utils';
+
 export function ExternalLinkIcon({ className = '' }: { className?: string }) {
   return (
     <svg
@@ -56,7 +58,7 @@ export const MoreIcon = ({ className }: { className: string }) => (
 
 export const Logo = ({ className }: { className?: string }) => (
   <svg
-    className={className}
+    className={cn('fill-[#CB0001]', className)}
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
     width="50"
@@ -66,7 +68,7 @@ export const Logo = ({ className }: { className?: string }) => (
   >
     <g
       transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-      fill="#CB0001"
+      fill="curentColor"
       stroke="none"
     >
       <path

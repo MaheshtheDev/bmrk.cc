@@ -69,7 +69,7 @@ export default function AddBookmarkInput({
   return (
     <div
       className={cn(
-        'h-26 flex flex-col px-1 border-neutral-200 border-r border-b',
+        'h-26 flex flex-col px-1 border-neutral-200 border-r border-b dark:border-neutral-600',
         className,
       )}
     >
@@ -83,7 +83,7 @@ export default function AddBookmarkInput({
         <div className="flex flex-col items-center justify-center w-full">
           <Input
             className={cn(
-              `mt-2 bg-transparent focus-visible:ring-0 w-full pt-0 px-2 pb-1 !outline-none !focus:outline-none !focus:border-none !border-none !shadow-none placeholder:text-stone-500 text-lg font-normal`,
+              `mt-2 bg-transparent focus-visible:ring-0 w-full pt-0 px-2 pb-1 !outline-none !focus:outline-none !focus:border-none !border-none !shadow-none placeholder:text-stone-500 dark:placeholder:text-stone-400 text-lg font-normal`,
             )}
             autoComplete="off"
             inputMode="text"
@@ -112,7 +112,7 @@ export default function AddBookmarkInput({
                   <TooltipTrigger asChild>
                     <UploadIcon
                       strokeWidth={2}
-                      className="w-[19px] h-[19px] text-neutral-500 hover:stroke-blue-700 active:stroke-blue-500"
+                      className="w-[19px] h-[19px] text-neutral-500 dark:text-white hover:stroke-blue-700 dark:hover:stroke-white active:stroke-blue-500 dark:active:stroke-white"
                     />
                   </TooltipTrigger>
                   <TooltipContent

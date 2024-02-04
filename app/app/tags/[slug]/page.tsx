@@ -33,7 +33,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Header headerText={`Tag: ${slug}`} />
-      <div className="h-full border-r border-neutral-200 pb-24">
+      <div className="h-full border-r border-neutral-200 pb-24 dark:border-neutral-600">
         <CardList bookmarks={filteredBookmarks} tags={tags} />
       </div>
     </>

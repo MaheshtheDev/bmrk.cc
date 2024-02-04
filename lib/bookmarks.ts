@@ -85,11 +85,7 @@ export const bookmarkParser = (rootNode: HTMLElement) => {
     const created_at: any = node.getAttribute('ADD_DATE');
     const title = node.textContent;
     if (url?.length && title) {
-      const bookmark = {
-        title,
-        url,
-      } as BookmarkModified;
-
+      const bookmark = { title, url } as BookmarkModified;
       if (created_at) {
         bookmark['created_at'] = new Date(created_at * 1000).toISOString();
       }

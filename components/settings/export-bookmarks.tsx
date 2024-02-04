@@ -64,16 +64,16 @@ export default function ExportBookmarks() {
       <div className="flex flex-col p-3.5 pt-3 pb-0 w-full">
         <div>
           <h3 className="font-medium">Export Bookmarks</h3>
-          <div className="text-sm mt-1 text-neutral-600">
+          <div className="text-sm mt-1 text-neutral-600 dark:text-muted-foreground">
             Instantly export your bookmarks as an HTML or CSV file.
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-end border-t bg-white border-neutral-300 rounded-bl-md rounded-br-md p-1.5 px-3.5">
+      <div className="flex w-full justify-end border-t bg-white border-neutral-300 dark:border-neutral-600 dark:bg-neutral-800 rounded-bl-md rounded-br-md p-1.5 px-3.5">
         <DropdownMenu>
           <DropdownMenuTrigger
             disabled={loadingHTML || loadingCSV}
-            className="items-center tracking-wide disabled:cursor-not-allowed disabled:bg-neutral-900/80 disabled:border-neutral-600 rounded-full text-white border border-neutral-900 focus:outline-0 active:bg-neutral-900/80 text-sm flex justify-center py-2 h-[36px] px-3 bg-neutral-900 hover:bg-neutral-900/80"
+            className="items-center tracking-wide disabled:cursor-not-allowed disabled:border-neutral-600 dark:disabled:border-neutral-900 rounded-full text-white border border-neutral-900 focus:outline-0 active:bg-neutral-900/80 text-sm flex justify-center py-2 h-[36px] px-3 bg-neutral-900 hover:bg-neutral-900/80 disabled:bg-neutral-900/80 dark:bg-neutral-950 dark:hover:bg-neutral-950/50 dark:active:bg-neutral-950/50"
           >
             {loadingHTML || loadingCSV ? (
               <Loader className="w-4 h-4 mr-1.5" />

@@ -12,12 +12,12 @@ export default function Loading() {
         <Skeleton className="w-20 h-7 bg-neutral-300 rounded-full" />
         <Skeleton className="w-20 h-7 bg-neutral-300 rounded-full" />
       </div>
-      <div className="border-b border-neutral-200 flex w-full" />
-      <div className="min-h-dvh border-r border-neutral-200">
+      <div className="border-b border-neutral-200 dark:text-neutral-600 flex w-full" />
+      <div className="min-h-dvh border-r border-neutral-200 dark:border-neutral-600">
         <CardSkeleton />
         <CardSkeleton />
         <CardSkeleton />
-        <CardSkeleton className="border-b border-neutral-200" />
+        <CardSkeleton className="border-b border-neutral-200 dark:border-neutral-600" />
       </div>
     </>
   );

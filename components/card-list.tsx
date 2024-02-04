@@ -16,13 +16,14 @@ export default function CardList({ bookmarks, tags }: CardListProps) {
   const data = groupByDate(bookmarks);
 
   return (
-    <div className="h-full border-neutral-200 pb-24">
+    <div className="h-full border-neutral-200 pb-24 dark:border-neutral-600">
       {Object.keys(data).map((dateKey: string) => {
         const bookmarksData = data[dateKey];
         return (
           <div
             className={cn(`flex flex-col w-full`, {
-              'border-b border-neutral-200': bookmarks.length > 0,
+              'border-b border-neutral-200 dark:border-neutral-600':
+                bookmarks.length > 0,
             })}
             key={dateKey}
           >

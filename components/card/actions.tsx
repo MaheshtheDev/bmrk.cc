@@ -20,15 +20,15 @@ function FavButtonIcon({ is_fav }: { is_fav: BookmarkModified['is_fav'] }) {
       disabled={pending}
       type="submit"
       className={cn(
-        `rounded-full flex w-9 h-9 hover:bg-yellow-100 active:bg-yellow-100 max-sm:flex items-center justify-center mr-2`,
+        `rounded-full flex w-9 h-9 hover:bg-yellow-100 active:bg-yellow-100 dark:hover:bg-yellow-200 dark:active:bg-yellow-200 max-sm:flex items-center justify-center mr-2`,
       )}
     >
       {pending ? (
-        <Loader className="text-neutral-600 h-4 w-4" />
+        <Loader className="text-neutral-600 h-4 w-4 dark:text-neutral-800" />
       ) : is_fav ? (
-        <StarFilledIcon className="h-4 w-4 text-yellow-500 " />
+        <StarFilledIcon className="h-4 w-4 text-yellow-500 dark:text-yellow-600" />
       ) : (
-        <StarIcon className="h-4 w-4 text-neutral-600" />
+        <StarIcon className="h-4 w-4 text-neutral-600 dark:text-neutral-500" />
       )}
     </button>
   );
@@ -44,7 +44,7 @@ export default function CardActions({
   const { is_fav } = data;
   return (
     <div className="justify-between mb-2 flex items-center w-full">
-      <div className="tracking-wide items-center text-neutral-500 text-xs gap-2 flex w-full">
+      <div className="tracking-wide items-center text-xs gap-2 flex w-full">
         <AddTag data={data} tags={tags} />
         <TagBadge data={data} />
       </div>

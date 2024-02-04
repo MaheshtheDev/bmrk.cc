@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { Logo } from 'components/icons';
@@ -11,15 +10,15 @@ import Profile from './profile';
 
 export default function Header({ headerText }: { headerText?: string }) {
   return (
-    <div className="border-b border-neutral-200 border-r w-full items-center flex justify-between">
+    <div className="border-b border-neutral-200 dark:border-neutral-600 border-r w-full items-center flex justify-between">
       <div className="flex items-center">
         <Link href="/" className="active:opacity-85 ml-2 block sm:hidden">
-          <Logo className="w-[44px] h-[44px]" />
+          <Logo className="w-[44px] h-[44px] dark:fill-white" />
         </Link>
         <h2 className="w-full font-medium flex flex-col p-3 tracking-wide">
           {headerText ?? 'Bookmark It.'}
           <span
-            className="text-xs mt-0.5 font-normal text-neutral-500"
+            className="text-xs mt-0.5 font-normal text-neutral-500 dark:text-muted-foreground"
             suppressHydrationWarning
           >
             {formatDate(new Date())}

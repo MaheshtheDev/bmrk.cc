@@ -46,7 +46,7 @@ export default function DeleteAccount() {
             <Skeleton className="w-52 h-4 bg-neutral-300" />
           )}
         </div>
-        <div className="text-sm mt-1 text-neutral-600">
+        <div className="text-sm mt-1 text-neutral-600 dark:text-muted-foreground">
           {user?.user_metadata?.name ? (
             `Permanently delete your account and all its associated data, this
           action cannot be undone.`
@@ -55,7 +55,7 @@ export default function DeleteAccount() {
           )}
         </div>
       </div>
-      <div className="flex w-full justify-end border-t bg-red-50 border-neutral-300 rounded-bl-md rounded-br-md p-2 px-3.5">
+      <div className="flex w-full justify-end border-t bg-red-50 dark:bg-red-400 border-neutral-300 dark:border-red-400 rounded-bl-md rounded-br-md p-2 px-3.5">
         {user?.user_metadata?.email ? (
           <button
             className="items-center tracking-wide rounded-full text-red-700 border border-neutral-400 focus:outline-0 focus:bg-neutral-200/80 active:bg-neutral-200/80 text-sm flex justify-center py-2 h-[36px] px-3  bg-white hover:bg-neutral-200/80"
