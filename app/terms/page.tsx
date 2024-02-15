@@ -14,10 +14,10 @@ export default function TermsPage() {
           >
             <Image
               src="/icons/icon.svg"
-              width={44}
-              height={44}
+              width={38}
+              height={38}
               alt="Bookmark it"
-              className="mr-2 "
+              className="mr-2.5 rounded-full"
               priority
             />
             Bookmark It.
